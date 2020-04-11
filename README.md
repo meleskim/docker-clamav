@@ -12,6 +12,8 @@ Find hub image: https://cloud.docker.com/repository/docker/mk0x/docker-clamav
 ### Alpine
 This image offers all the same options like the original one. It is based on Alpine Linux and this time providing easy extensions via configuration files.
 
+Alpine version reduces foot print to something about less than 5%, compressed size in docker hub is 6.72 MB compared to debian 216.21 MB.
+
 ### Provides
 Dockerized open source antivirus daemons for use with 
 - file sharing containers like [Nextcloud](https://hub.docker.com/_/nextcloud/) or 
