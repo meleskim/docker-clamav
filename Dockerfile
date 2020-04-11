@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM alpine:edge
 LABEL maintainer="Markus Kosmal <dude@m-ko.de> https://m-ko.de"
 
 RUN apk add --no-cache bash clamav rsyslog wget clamav-libunrar
