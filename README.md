@@ -1,4 +1,4 @@
-# docker-clamav:alpine
+# docker-clamav:alpine-edge
 
 ![ClamAV Logo](http://www.clamav.net/assets/clamav-trademark.png)
 
