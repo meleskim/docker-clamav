@@ -4,7 +4,7 @@ version: '3.7'
 services:
 
   av:
-    image: mkodockx/docker-clamav:alpine
+    image: mkodockx/docker-clamav:alpine-edge
     container_name: nextav
     restart: unless-stopped
     volumes:
