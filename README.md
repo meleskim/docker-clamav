@@ -5,14 +5,14 @@
 ![ClamAV latest.stable](https://img.shields.io/badge/ClamAV-latest.stable-brightgreen.svg?style=flat-square)
 
 ## Hub
-Find hub image: https://cloud.docker.com/repository/docker/mk0x/docker-clamav
+Find hub image: https://cloud.docker.com/repository/docker/mkodockx/docker-clamav
 
 ## About
 
-### Alpine
-This image offers all the same options like the original one. It is based on Alpine Linux and this time providing easy extensions via configuration files.
+### Alpine Edge
+This image offers all the same options like the Alpine one. This one is based on edge version of Alpine. The edge version is the current development tree of alpine and probably not stable. See alpine wiki [here](https://wiki.alpinelinux.org/wiki/Edge) for more information.
 
-Alpine version reduces foot print to something about less than 5%, compressed size in docker hub is 6.72 MB compared to debian 216.21 MB.
+Alpine-edge version reduces foot print to something about less than 7%, compressed size in docker hub is 7.37 MB compared to debian 216.21 MB.
 
 ### Provides
 Dockerized open source antivirus daemons for use with 
@@ -52,18 +52,18 @@ Find the latest releases at the official [docker hub](https://hub.docker.com/r/m
 ## Usage
 
 ```bash
-    docker run -d -p 3310:3310 mk0x/docker-clamav:alpine
+    docker run -d -p 3310:3310 mkodockx/docker-clamav:alpine-edge
 ```
 
 or linked (recommended)
 ```bash
-    docker run -d --name av mk0x/docker-clamav:alpine
-    docker run -d --link av:av application-with-clamdscan-or-something:alpine
+    docker run -d --name av mkodockx/docker-clamav:alpine-edge
+    docker run -d --link av:av application-with-clamdscan-or-something:alpine-edge
 ```
     
 ## docker-compose
 
-See example with Nextcloud at [docker-compose.yml](https://github.com/mko-x/docker-clamav/blob/alpine/docker-compose.yml).
+See example with Nextcloud at [docker-compose.yml](https://github.com/mko-x/docker-clamav/blob/alpine-edge/docker-compose.yml).
 
 You can simply provide your own configurations via volume substitution.
 
@@ -72,7 +72,7 @@ You can simply provide your own configurations via volume substitution.
 Start with this one in your own Dockerfile:
 
 ```Dockerfile
-FROM mk0x/docker-clamav:alpine
+FROM mkodockx/docker-clamav:alpine-edge
 COPY your/clamd.conf /etc/clamav/clamd.conf
 COPY your/freshclam.conf /etc/clamav/freshclam.conf
 
