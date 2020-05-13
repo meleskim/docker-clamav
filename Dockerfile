@@ -1,5 +1,5 @@
 FROM debian:buster-slim
-LABEL maintainer="Markus Kosmal <dude@m-ko.de>"
+LABEL maintainer="https://mko-x.github.io/docker-clamav/"
 
 # Debian Base to use
 ENV DEBIAN_VERSION buster
