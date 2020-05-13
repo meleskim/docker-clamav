@@ -1,5 +1,5 @@
 FROM alpine:3.11
-LABEL maintainer="Markus Kosmal <dude@m-ko.de> https://m-ko.de"
+LABEL maintainer="https://mko-x.github.io/docker-clamav/"
 
 RUN apk add --no-cache bash clamav rsyslog wget clamav-libunrar
 
