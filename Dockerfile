@@ -1,5 +1,5 @@
 FROM debian:stretch-slim
-LABEL maintainer="Markus Kosmal <dude@m-ko.de> https://m-ko.de"
+LABEL maintainer="https://mko-x.github.io/docker-clamav/"
 
 # Debian Base to use
 ENV DEBIAN_VERSION stretch
